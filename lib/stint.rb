@@ -1,5 +1,6 @@
 require 'stint/version'
 require 'stint/github'
+require 'stint/project'
 #TODO: get a list of workflow states (from the list of issues)
 # get a list of issues in a specific workflow state
 # promote an issue into the next higher state (unlabelled, gets 1st state - last state, gets closed)

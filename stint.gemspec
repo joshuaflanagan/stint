@@ -8,6 +8,9 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{What are you working on?}
   gem.homepage      = "https://github.com/joshuaflanagan/stint"
 
+  gem.add_dependency 'httparty', '~>0.8'
+  gem.add_development_dependency 'rspec', '~>2.0'
+
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
