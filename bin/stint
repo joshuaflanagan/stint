@@ -3,6 +3,6 @@
 $:.unshift(File.join(File.dirname(__FILE__), "/../lib"))
 require 'stint'
 
-g = Stint::GitHub.new ARGV[0]
-puts g.labels.map{|l| l['name']}
-puts g.issues.map{|i| i['title']}
+p = Stint::Project.new ARGV[0]
+puts p.phases
+puts p.github.issues.map{|i| i['title']}
